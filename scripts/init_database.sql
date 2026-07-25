@@ -1,5 +1,7 @@
 -- Create Database 
-
+/*WARNING 
+	Running this script will drop the entire Datawarehouse database if it exists
+	all data will be deleted.*/
 USE master;
 
 IF EXISTS(SELECT 1 FROM sys.databaseS WHERE name = 'DataWarehouse')
